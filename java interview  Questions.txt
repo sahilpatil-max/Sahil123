@@ -1,0 +1,229 @@
+1.what is difference between string and string builder ?
+=>
+1.String pool
+2.thread safe buffer safe sync
+3.efficient builder,non sync thread not safee
+==========
+2.what is significance of equals method in object class ?
+=> 1.reference of object
+===================
+3.ways to create string object in java ?
+=> 1.with literal 
+2.new keyword
+3.toString
+=================================================	
+4.difference between string builder and string buffer?
+	=> 1. string is collection of characters which are immutable
+	   2. so thats why we can not  manipulate the strings 
+	   3.so for manipulation purpose we use string buffer and string builder 
+	   4.string buffer is  Synchronnized and builder is un synchronized 
+======================================
+requirements of collection
+1.arrays can not store dissimilar object
+2.dynamic size 
+3.
+9 interface 
+=>	1.list - 1.arraylist 2.linkedlist 3.vector
+	2.set -  1.hashset 2.linked hashset 
+  	  a.navigable set
+		1.treeset
+	3.queue -1.priority Queue 
+		 2.blocking queue
+		 3.linked queue
+	4.iterable
+	6.collection
+	7.sorted set
+	8.deque	
+	9.Properties
+java has interface named Map 
+		map 
+	Hashmap			treemap
+	linked hashmap
+	
+	weak hash map
+		WeakHashMap is an implementation of the Map interface. WeakHashMap is almost same as HashMap 
+		except in case of WeakHashMap, if object is specified as key doesn’t
+		contain any references- it is eligible for garbage collection even though it is associated with WeakHashMap.
+		i.e Garbage Collector dominates over WeakHashMap.
+	identity map:
+		1.works on == operator
+		2.
+==
+5.syntax of for each loop ?
+=>
+========================
+6.name  of sets in collection framework ?tell difference in them ?
+=> 	set is interface
+	1.hashset -unique only
+	2.treeset- unique ascend
+	3.linkedhashset - order of insertion unique
+
+==========================================
+7.name of the list in collection framework ?
+
+8.difference in linked list and arraylist ?
+=>insertion order 
+  ascending order
+============================
+9.way off traversing a list ?
+	=>1.for each
+cursor	=>2.iterator --hasnext()--checks for next element , next()--returns new object
+cursor	=>3.listiterator(only for List interface, bidirectional) -- hasNext().hasPrevious(),add(),remove(),set(),nextIndex(),previous();
+cursor	=>4.enumerations --hasMoreEmlelments(), nextElements();
+
+diff betwn iterator & enumerator
+================================+
+	iterator		|
+In Iterator,  we can read 	|
+and remove element		|
+ while traversing 		|
+element in the collections. 	|
+================================+
+	enumerator		|
+Using Enumeration, 		|
+we can only read element 	|
+during traversing element 	|
+in the collections.		|
+================================+
+Marker Interface
+10.what is iterator ?
+==========================================
+11.how to  get its object ?
+=>Iterator it = collection_name.iterator();---singleton
+  Enumeration e = v.elements()----enumeration object
+=====================================
+12.what are the methods of iteration ?
+	=>	moving methods
+		1.nxt(), previos ()
+		2.hasnext() , hasPrevious ().
+		3.remove();
+========================================
+Arraylist
+1.not thread safe-synchronized
+Vector
+1.thred safe
+=========================================
+Hashtable vs Hashmap
+1) HashMap is non-synchronized.
+This means if it’s used in multithread environment 
+then more than one thread can access and process
+ the HashMap simultaneously.
+------------
+Hashtable is synchronized. 
+It ensures that no more 
+than one thread can access 
+the Hashtable at a given moment of time.
+The thread which works on Hashtable acquires a lock on
+it to make the other threads wait till its work gets completed.
+===================================================================
+13.can we traversing set in the for eacch ? 
+=>
+=================
+14.difference between the for loop  and for each loop ?
+=>
+=============================
+15.what are keywords in exception handling ?
+=>	1.try-catch
+	2.throw 
+	3.throws
+		-overided methods parent fun throws ioException()
+		-child fun throws Exception()
+=============================
+16.why we forward the exception by throws keyword ?
+=>we have
+=============================
+17.why exception handling is given ?
+=>
+===============================
+17.a exception and errors ?
+=> exceptions are out of controll--input
+   errors -- system level exceptions
+================================
+18.what is try with resources ?
+=>The try-with-resources statement is a try statement that declares one or more resources.
+ A resource is an object that must be closed after the program is finished with it.
+ The try-with-resources statement ensures that each resource is 
+closed at the end of the statement. 
+ ex.
+ static String readFirstLineFromFile(String path) throws IOException {
+    try (BufferedReader br = new BufferedReader(new FileReader(path))) {
+        return br.readLine();
+    }
+}
+============================================================
+19.what is difference between methood overloading and method overrding ?
+=>
+============================================================
+20.what is accesibility rule of overridinng ?
+=>	1.overridden method in sub-class scope should widened
+============================================================
+21.refference of super and object of  sub class ?
+=>over riding
+	ex. Super s = new sub();
+		s.fun();
+	1.at compile time searches method on the basis of Super class
+	2.at run time runs the method in object.
+============================================================
+22.what is multidimensional array ?
+=>array of arrays
+============================================================
+23.what is encapsulation  ?
+=>
+===========================================================
+24.how to hide method ? hiding ?
+=>1.declaring static and overriding it
+ex.
+	1.method selection decision taken at compile time on the basis of reference.
+===========================================================
+25.what we achieve in encapsulation ?
+=>1.binding of data with its method
+====================================
+26.what is reference variable ?
+=> variable which refers to an object.
+======================================
+27.what is use of new keyword ?
+=>
+=======================================
+28.what is dynamic method dispatch ?
+=>overriding
+=======================================
+29.what is collection ?
+=> collection is a java framework with which we can use datastructures to manipulate group of data.
+===========================================================
+30.how ascending order is maintaineed in tree set ?
+=>comparator- compare-- object return type int
+  comparable - compareto.- same 
+==============================================
+31.
+31.what is use of comparable ?
+=>1.it is an iterface implemented to compare two objects
+same class comaparison of objects.
+==============================================
+32. parameters in compareTo() method ?
+=>2 parameters.
+=================================================
+33. what is comparator ?
+=>interface
+=================================================
+34.difference between compparable and comparator ?
+=>
+comparable  vs comparator
+================================================
+1.comparable used to provide by default comparison
+=======================================================
+35.uniqueness is maintained in hashset how  ?
+=> hashcode(),equals().
+=======================================================
+36.how uniqueness is maintained in treeset ?
+=>compareTo() or comparator()
+========================================================
+37.final  keyword in java?
+=>making any variable immuatable
+========================================================
+38.what is final  method ?
+=> 1.can not be overridden
+==========================================================
+39.can we define public abstarct final class A {}?
+=>no.
+=======================================================================================================*--*================================
+

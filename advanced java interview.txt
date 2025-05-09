@@ -1,0 +1,145 @@
+advanced java interview
+1.what is httpservlet request object ?
+2.why do we need it ?
+3.how many types  of request ?
+=> get post put head delete trace patch 
+4.Difference between get and post request ?
+5.when to use get and when to use post?
+6.types of request ?
+7.why there is need of url to servlet ?
+8.how to give url to servlet ?
+=>1.web.xml
+  2.annotation
+9.web xml purpose ?
+=> giving information to container.
+	1.initialisation of parameters.
+
+10.what is container ?
+11.what is jsp ?
+=> 1.java server pages
+	2.it is an extension to servlet techology.
+12.why we use jsp?
+=>	1.to keep the business logic and presentation logic seperate
+13.tell me difference in prepared statement and statement ?
+14.how many ways of tracking session ?
+=>4
+15.name session tracking method ?
+16.how to create hidden form field?
+17.what is difference in cookies and http session ?
+	=>cookies are stored in client and sent to server with every request
+		1.
+18.how to give the session object in servlet ?
+=>	HttpSession Session = request.getSession(true);
+	HttpSession Session = request.getSession(false);
+19.how many objects are servlet scope ?
+	=>2 : 1.servlet config. 
+		2.servlet context.
+ =>
+20.what is scriplet ?
+=>	
+21.what is use of scriplet in jsp ?
+=>
+22.scriplet syntax?
+<% %>
+23.request data in scriplet how to get it ?
+24.why we store data in request ?
+25.difference in send redirect and request dispatcher ?
+26.difference in forward method and include method ?
+27.what is servlet context ?
+28.what is servlet scope object ?
+=>	1.session
+	2.context
+`	3.request
+29.how to get servlet config object ?
+30.implicit objects in jsp ?
+=>	1.out
+	2.exception
+	3.request
+	4.response
+	5.application
+	6.
+31.when to use sendredirect and requestDispatcher ?
+32.how can i use the include method and forward in same servlet ?
+33.what is servlet context scope , request scope  , session scope and App scope ?
+34. 100 request 100 clients 
+=>	100request object
+	1 servelet context
+	100 session object 
+35.can you defne the time to session object ?
+36.how to give time ?
+=>maxage()
+37.removing the attribute method ?
+38.how could you handle the different request type ?
+
+======================================
+17-10-2020
+1.what is servlet ?
+2.how to create servlet in java ?
+3.ways to create servlet ?
+4.what is difference in generic servlet and extending httpservlet ?
+5.what is servlet life cycle ?
+6.who calls the life cycle methods ?
+7.what is purpose of the container ?
+8.which object are passed to service methods ?
+9.significance of request object ?
+10.how to recieve multiple values in request ?
+=> request.getParameterMap();
+11.to get multiple values which method is used ?
+12.servlet scopes in java ?
+=>
+  1.servlet context
+  2.session
+  3.request
+13.how to get session object in java ?
+14.method to get im session ?
+15.what is init param ?
+16.how to get the init params ?
+17.difference in the sendredirect and forward request ?
+18.what is jsp ?
+19.jsp life cycle ?
+=>
+20.what are jsp components?
+=>scripting elements
+  directives 
+  standard actions
+21.explain above ones  scripting elements , directives , standard actions?
+22.how to write import statemnts in jsp ?
+23.what is jsp error page ?
+24.how many implicit objects are in the jsp ?
+25.which object is only available in error page ?
+26.jsp actions ?
+=>	1.use bean 
+	2.set property
+	3.get property
+27.what is get property ?
+28.difference of page directive , include directives ,
+
+====================================
+1.what is the need of design pattern ?
+=>	1.reusability
+	2.easy to maintain
+2.what is easy to maintain ?
+=>1.adding functionality
+3.what is mvc?
+=>1.model view controller
+	1.user interface
+	2.logical part
+4.what is advantages of MVC ?
+=>	1.reusability of the code
+	2.more sophisticated transfer of data throught dto
+	3.
+5.what is flow of the  MVC?
+=>
+6.what is dao class ?
+=>data access objects 
+7.what is dto ?
+8.what is use bean tag ?
+=> it is standard action deffined fo particular jsp
+	use beans tag uses the beans class we have provide and
+	will create the object of that class if the object is not available in scope.
+9.how many scopes can be given in  jsp use beans?
+=>1.session, request, page,application
+10.how many objects of connection has been created ?
+11.what is way to create singleton class ?
+=>making our constructor private and creating sigle object in static method and cross checking the conection is null  or not.
+11.what is compiletime exception & runtime exception ?
